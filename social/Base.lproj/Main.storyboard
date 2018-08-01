@@ -19,21 +19,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwp-au-nIs">
-                                <rect key="frame" x="137" y="20" width="101" height="30"/>
+                                <rect key="frame" x="137" y="89" width="101" height="30"/>
                                 <state key="normal" title="Abrir facebook"/>
                                 <connections>
                                     <action selector="openSocialFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Teu-SE-Rgy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvS-5d-duA">
-                                <rect key="frame" x="137" y="20" width="101" height="30"/>
+                                <rect key="frame" x="137" y="89" width="101" height="30"/>
                                 <state key="normal" title="Abrir facebook"/>
                                 <connections>
                                     <action selector="openSocialFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMB-9P-o5d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr2-0h-GKT">
-                                <rect key="frame" x="145" y="58" width="85" height="30"/>
+                                <rect key="frame" x="145" y="127" width="85" height="30"/>
                                 <state key="normal" title="Abrir Twitter"/>
                                 <connections>
                                     <action selector="openSocialFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1f4-07-MZl"/>
@@ -41,24 +41,41 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PL1-Oh-HQM">
-                                <rect key="frame" x="135" y="96" width="106" height="30"/>
+                                <rect key="frame" x="134" y="165" width="106" height="30"/>
                                 <state key="normal" title="Abrir Instagram"/>
                                 <connections>
                                     <action selector="openSocialFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CbP-lb-LRq"/>
                                     <action selector="openSocialInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sd-ZX-LKS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening Social Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5k-LH-Ek3">
+                                <rect key="frame" x="107" y="34" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6f-RX-GwU">
+                                <rect key="frame" x="140" y="203" width="95" height="30"/>
+                                <state key="normal" title="Abrir Linkedin"/>
+                                <connections>
+                                    <action selector="openSocialLinkedIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1R0-sM-ZpX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pvS-5d-duA" firstAttribute="centerX" secondItem="Xwp-au-nIs" secondAttribute="centerX" id="02T-Q8-snO"/>
-                            <constraint firstItem="Fr2-0h-GKT" firstAttribute="centerX" secondItem="Xwp-au-nIs" secondAttribute="centerX" id="8Cf-aJ-Tvi"/>
-                            <constraint firstItem="Xwp-au-nIs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bqn-1d-fbf"/>
-                            <constraint firstItem="pvS-5d-duA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dgp-Ah-Xst"/>
-                            <constraint firstItem="PL1-Oh-HQM" firstAttribute="centerX" secondItem="Xwp-au-nIs" secondAttribute="centerX" id="eop-T9-Tqi"/>
-                            <constraint firstItem="PL1-Oh-HQM" firstAttribute="top" secondItem="Fr2-0h-GKT" secondAttribute="bottom" constant="8" id="gcE-1V-xCG"/>
-                            <constraint firstItem="Fr2-0h-GKT" firstAttribute="top" secondItem="pvS-5d-duA" secondAttribute="bottom" constant="8" id="ker-s6-WJC"/>
-                            <constraint firstItem="Xwp-au-nIs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u4p-L1-cia"/>
+                            <constraint firstItem="pvS-5d-duA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1wl-JF-DvL"/>
+                            <constraint firstItem="Fr2-0h-GKT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="96u-g7-xdn"/>
+                            <constraint firstItem="Fr2-0h-GKT" firstAttribute="top" secondItem="pvS-5d-duA" secondAttribute="bottom" constant="8" id="CRI-6Y-Gid"/>
+                            <constraint firstItem="q5k-LH-Ek3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="HdJ-oH-dEr"/>
+                            <constraint firstItem="n6f-RX-GwU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N36-1g-Bpm"/>
+                            <constraint firstItem="PL1-Oh-HQM" firstAttribute="top" secondItem="Fr2-0h-GKT" secondAttribute="bottom" constant="8" id="QOC-KW-My8"/>
+                            <constraint firstItem="pvS-5d-duA" firstAttribute="top" secondItem="q5k-LH-Ek3" secondAttribute="bottom" constant="34" id="TyR-Yo-ZAP"/>
+                            <constraint firstItem="Xwp-au-nIs" firstAttribute="baseline" secondItem="pvS-5d-duA" secondAttribute="baseline" id="XVg-7T-U9g"/>
+                            <constraint firstItem="q5k-LH-Ek3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e0m-gW-ooG"/>
+                            <constraint firstItem="PL1-Oh-HQM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gdN-gi-xQb"/>
+                            <constraint firstItem="Xwp-au-nIs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lzG-EL-yBF"/>
+                            <constraint firstItem="n6f-RX-GwU" firstAttribute="top" secondItem="PL1-Oh-HQM" secondAttribute="bottom" constant="8" id="vu4-eX-Rt0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

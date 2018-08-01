@@ -41,6 +41,16 @@ class ViewController: UIViewController {
         openSocial(appURL: appURL, webURL: webURL);
     }
     
+    @IBAction func openSocialLinkedIn(_ sender: Any) {
+        
+        let screenName =  "appdaagua"
+        let appURL = URL(string: "linkedin://#profile/\(screenName)")!
+        let webURL = URL(string: "https://linkedin.com/company/\(screenName)")!
+        
+        openSocial(appURL: appURL, webURL: webURL);
+    }
+    
+    
     @IBAction func openSocialInstagram(_ sender: Any) {
         
         let screenName =  "appdaagua"
@@ -68,6 +78,5 @@ class ViewController: UIViewController {
             }
         }
     }
-    
 }
 
