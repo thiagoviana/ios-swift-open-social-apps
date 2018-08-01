@@ -15,7 +15,7 @@ You have to modify the Info.plist file including the social networks you desire 
 ```
 You can also do it using the visual view of Xcode.
 
-# App vs Web
+# App vs. Web
 The approach used here will verify if the native app can be opened directly in the desired profile. If it can't, the Safari browser will open it with a web link instead.
 
 The **openSocialFacebook** method is called when the button is pressed. It sets both, appURL and webURL before call the **openSocial** method.
