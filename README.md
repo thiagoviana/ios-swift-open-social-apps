@@ -9,5 +9,6 @@ How to open social apps like Facebook, Twitter and Instagram or redirect to Safa
     <string>fb</string>
     <string>twitter</string>
     <string>instagram</string>
+    <string>linkedin</string>
   </array>
 ```
