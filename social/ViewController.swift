@@ -23,29 +23,29 @@ class ViewController: UIViewController {
     
     @IBAction func openSocialFacebook(_ sender: Any) {
         
-        let screenName =  "appdaagua"
+        let name =  "appdaagua"
         let pageID = "1549981958628014"; // App da Água Fanpage ID
         
         let appURL = URL(string: "fb://profile/" + pageID)!
-        let webURL = URL(string: "https://www.facebook.com/\(screenName)")!
+        let webURL = URL(string: "https://www.facebook.com/\(name)")!
         
         openSocial(appURL: appURL, webURL: webURL);
     }
     
     @IBAction func openSocialTwitter(_ sender: Any) {
         
-        let screenName =  "appdaagua"
-        let appURL = URL(string: "twitter://user?screen_name=\(screenName)")!
-        let webURL = URL(string: "https://twitter.com/\(screenName)")!
+        let name =  "appdaagua"
+        let appURL = URL(string: "twitter://user?screen_name=\(name)")!
+        let webURL = URL(string: "https://twitter.com/\(name)")!
         
         openSocial(appURL: appURL, webURL: webURL);
     }
     
     @IBAction func openSocialLinkedIn(_ sender: Any) {
         
-        let screenName =  "appdaagua"
-        let appURL = URL(string: "linkedin://#profile/\(screenName)")!
-        let webURL = URL(string: "https://linkedin.com/company/\(screenName)")!
+        let name =  "appdaagua"
+        let appURL = URL(string: "linkedin://company/\(name)")!
+        let webURL = URL(string: "https://linkedin.com/company/\(name)")!
         
         openSocial(appURL: appURL, webURL: webURL);
     }
@@ -53,9 +53,9 @@ class ViewController: UIViewController {
     
     @IBAction func openSocialInstagram(_ sender: Any) {
         
-        let screenName =  "appdaagua"
-        let appURL = URL(string: "instagram://user?screen_name=\(screenName)")!
-        let webURL = URL(string: "https://instagram.com/\(screenName)")!
+        let name =  "appdaagua"
+        let appURL = URL(string: "instagram://user?username=\(name)")!
+        let webURL = URL(string: "https://instagram.com/\(name)")!
         
         openSocial(appURL: appURL, webURL: webURL);
     }
@@ -63,18 +63,18 @@ class ViewController: UIViewController {
     func openSocial(appURL: URL, webURL: URL) {
         
         // app installed : open
-        if UIApplication.shared.canOpenURL(appURL as URL) {
+        if UIApplication.shared.canOpenURL(appURL) {
             if #available(iOS 10.0, *) {
-                UIApplication.shared.open(appURL as URL, options: [:], completionHandler: nil)
+                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
             } else {
-                UIApplication.shared.openURL(appURL as URL)
+                UIApplication.shared.openURL(appURL)
             }
         } else {
             // app not found : redirect to safari
             if #available(iOS 10.0, *) {
-                UIApplication.shared.open(webURL as URL, options: [:], completionHandler: nil)
+                UIApplication.shared.open(webURL, options: [:], completionHandler: nil)
             } else {
-                UIApplication.shared.openURL(webURL as URL)
+                UIApplication.shared.openURL(webURL)
             }
         }
     }

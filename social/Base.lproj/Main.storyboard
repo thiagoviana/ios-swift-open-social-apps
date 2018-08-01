@@ -18,13 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwp-au-nIs">
-                                <rect key="frame" x="137" y="89" width="101" height="30"/>
-                                <state key="normal" title="Abrir facebook"/>
-                                <connections>
-                                    <action selector="openSocialFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Teu-SE-Rgy"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening Social Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5k-LH-Ek3">
+                                <rect key="frame" x="107" y="34" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvS-5d-duA">
                                 <rect key="frame" x="137" y="89" width="101" height="30"/>
                                 <state key="normal" title="Abrir facebook"/>
@@ -36,7 +35,6 @@
                                 <rect key="frame" x="145" y="127" width="85" height="30"/>
                                 <state key="normal" title="Abrir Twitter"/>
                                 <connections>
-                                    <action selector="openSocialFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1f4-07-MZl"/>
                                     <action selector="openSocialTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6m-Vm-h3D"/>
                                 </connections>
                             </button>
@@ -44,16 +42,9 @@
                                 <rect key="frame" x="134" y="165" width="106" height="30"/>
                                 <state key="normal" title="Abrir Instagram"/>
                                 <connections>
-                                    <action selector="openSocialFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CbP-lb-LRq"/>
                                     <action selector="openSocialInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sd-ZX-LKS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening Social Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5k-LH-Ek3">
-                                <rect key="frame" x="107" y="34" width="160" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6f-RX-GwU">
                                 <rect key="frame" x="140" y="203" width="95" height="30"/>
                                 <state key="normal" title="Abrir Linkedin"/>
@@ -71,10 +62,8 @@
                             <constraint firstItem="n6f-RX-GwU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N36-1g-Bpm"/>
                             <constraint firstItem="PL1-Oh-HQM" firstAttribute="top" secondItem="Fr2-0h-GKT" secondAttribute="bottom" constant="8" id="QOC-KW-My8"/>
                             <constraint firstItem="pvS-5d-duA" firstAttribute="top" secondItem="q5k-LH-Ek3" secondAttribute="bottom" constant="34" id="TyR-Yo-ZAP"/>
-                            <constraint firstItem="Xwp-au-nIs" firstAttribute="baseline" secondItem="pvS-5d-duA" secondAttribute="baseline" id="XVg-7T-U9g"/>
                             <constraint firstItem="q5k-LH-Ek3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e0m-gW-ooG"/>
                             <constraint firstItem="PL1-Oh-HQM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gdN-gi-xQb"/>
-                            <constraint firstItem="Xwp-au-nIs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lzG-EL-yBF"/>
                             <constraint firstItem="n6f-RX-GwU" firstAttribute="top" secondItem="PL1-Oh-HQM" secondAttribute="bottom" constant="8" id="vu4-eX-Rt0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
