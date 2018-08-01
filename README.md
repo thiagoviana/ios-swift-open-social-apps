@@ -18,6 +18,8 @@ You can also do it using the visual view of Xcode.
 # App vs Web
 The approach used here will verify if the native app can be opened directly in the desired profile. If it can't, the Safari browser will open with a web link instead.
 
+The openSocialFacebook method is called when the button is pressed. It's sets both, appURL and webURL before call the openSocial method.
+
 ```
 @IBAction func openSocialFacebook(_ sender: Any) {
         
@@ -28,5 +30,27 @@ The approach used here will verify if the native app can be opened directly in t
     let webURL = URL(string: "https://www.facebook.com/\(screenName)")!
 
     openSocial(appURL: appURL, webURL: webURL);
+}
+```
+The openSocial method receive the parameters (appURL and webURL), test and do all the job!
+
+```
+func openSocial(appURL: URL, webURL: URL) {
+        
+    // app installed : open
+    if UIApplication.shared.canOpenURL(appURL as URL) {
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(appURL as URL, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(appURL as URL)
+        }
+    } else {
+        // app not found : redirect to safari
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(webURL as URL, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(webURL as URL)
+        }
+    }
 }
 ```
