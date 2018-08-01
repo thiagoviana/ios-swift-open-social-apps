@@ -2,7 +2,7 @@
 How to open social apps like Facebook, Twitter and Instagram or redirect to Safari.
 
 # Info.plist
-You have to modify the Info.plist fie including the social networks you derire to link using the LSApplicationQueriesSchemes property. Simply open Info.plist as a Source Code, and paste this:
+You have to modify the Info.plist file including the social networks you desire to link using the **LSApplicationQueriesSchemes** property. Simply open Info.plist as a Source Code, and paste this:
 
 ```
 <key>LSApplicationQueriesSchemes</key>
@@ -16,9 +16,9 @@ You have to modify the Info.plist fie including the social networks you derire t
 You can also do it using the visual view of Xcode.
 
 # App vs Web
-The approach used here will verify if the native app can be opened directly in the desired profile. If it can't, the Safari browser will open with a web link instead.
+The approach used here will verify if the native app can be opened directly in the desired profile. If it can't, the Safari browser will open it with a web link instead.
 
-The openSocialFacebook method is called when the button is pressed. It's sets both, appURL and webURL before call the openSocial method.
+The **openSocialFacebook** method is called when the button is pressed. It sets both, appURL and webURL before call the **openSocial** method.
 
 ```
 @IBAction func openSocialFacebook(_ sender: Any) {
@@ -32,7 +32,8 @@ The openSocialFacebook method is called when the button is pressed. It's sets bo
     openSocial(appURL: appURL, webURL: webURL);
 }
 ```
-The openSocial method receive the parameters (appURL and webURL), test and do all the job!
+
+The **openSocial** method receives the parameters (appURL and webURL), tests, and do all the job!
 
 ```
 func openSocial(appURL: URL, webURL: URL) {
